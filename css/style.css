@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+*,
+*:after,
+*:before {
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+
+}
+
+
+
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #011140;
+    --third-color: #010A26;
+    --four-color: #848484;
+    --text-color: #252526;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 4.0vw;
+}
+h2{
+    font-size: 3.0rem;
+}
+
+h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+
+}
+
+
+
+header .intro{
+    position: relative;
+    
+}  
+
+header .intro img{
+    height: 5vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:right;
+    position: relative;
+    min-height: 250px;
+
+
+}
+
+header .navbar{
+    padding: 0.5em 0;
+}
+
+
+header .navbar-brand {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}   
+
+
+
+header .navbar .navbar-nav .nav-link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: width 0.3s;
+}
+
+
+header .navbar .navbar-nav .nav-link:hover::after{
+    width: 60%;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: width 0.3s;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+header .navbar .navbar-nav i{
+    font-size: 1.2rem;
+    color: #011140;
+    cursor: pointer;
+
+}
+
+ .about{
+    padding-top: -0.5rem;
+ }
+
+ .about_text{
+     font-size: 15px;
+     color: var(--text-color);
+
+ }
+
+ .about_company{
+     background-image: url("/images/IMG_4786.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     min-height: 500px;
+     background-position: center;
+     position: relative;
+
+ }
+
+ .about_company::before,
+ .about_company_home::before,
+ .sale::before,
+ .about_company_beauty::before{
+     content:'';
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background:rgba(0,0,0, 0.3);
+     margin:auto;
+ }
+ .about_company_beauty{
+    background-image: url("/images/content-pixie-fMx0jcIxKmw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 240px;
+    background-position: center;
+    position: relative;
+
+ }
+ .about_company_home{
+    background-image: url("/images/aaron-huber-G7sE2S4Lab4-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 240px;
+    background-position: center;
+    position: relative;
+
+ }
+
+ .about_company_beauty:nth-child(1){
+     margin-bottom: 1.2rem;
+ }
+
+ .about_company_text{
+     position: absolute;
+     top: 4rem;
+     left: 1.2rem;
+     color: #fff;
+ }
+
+.about_company_text h3{
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.about_company_text p{
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.about_box{
+    padding: 1rem;
+}
+
+.about_box h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+}
+
+.about_box p{
+    color: var(--four-color);
+    font-size: 0.9rem;
+    line-height: 1.8;
+
+}
+
+.blog .row .post p{
+    margin-bottom: 0.6rem;
+}
+
+.blog .row .post a{
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+    border-style: none;
+
+}
+
+.blog .row .sidebar .side2 {
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+
+.blog .row .sidebar .side2 .row {
+    margin-bottom: 1.2rem;
+}
+
+
+.blog .row .sidebar .side2 .row .sidetext h4{
+    font-size: 1rem;
+}
+
+.blog .row .sidebar .side2 .row .sidetext a{
+    border-style: none;
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+}
+
+
+.sale{
+    background-image: url("/images/huy-nguyen-J3QxzLuw9QU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 240px;
+    background-position: center;
+    position: relative;
+
+}
+
+.sale_text{
+    position: absolute;
+    top: 4rem;
+    left: 1.2rem;
+    color: #fff;
+    align-items: center;
+}
+
+.sale_text h3{
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.sale_text a{
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+
+
+
+@media (max-width:1030px){
+    .about_company{
+        margin-bottom: 1.2rem;
+    }
+
+}
+
+
+@media (max-width:767px){
+    .about_company{
+        min-height: 400px;
+    }
+    .about_box{
+        padding-bottom: 0rem;
+    }
+    
+
+}
